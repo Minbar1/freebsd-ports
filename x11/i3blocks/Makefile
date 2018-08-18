@@ -16,11 +16,14 @@ USES=		gmake tar:bzip2
 USE_GITHUB=	yes
 GH_ACCOUNT=	Minbar1
 GH_PROJECT=	i3blocks
-GH_TAGNAME=	 3ad5d00
+GH_TAGNAME=	3ad5d00
 
 PLIST_FILES=	bin/i3blocks
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/i3blocks ${STAGEDIR}${PREFIX}/bin/i3blocks
+	${INSTALL_MAN} ${WRKSRC}/i3blocks.1.md ${STAGEDIR}${MANPREFIX}/man/man1
+	${INSTALL_DATA} ${WRKSRC}/i3blocks.conf \
+			${STAGEDIR}${PREFIX}/etc/i3blocks.conf.sample
 
 .include <bsd.port.mk>
