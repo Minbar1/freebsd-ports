@@ -1,2 +1,2 @@
 # freebsd-ports
-Ports that do not exist and my custom FreeBSD ports.
+Custom and new ports for FreeBSD.
