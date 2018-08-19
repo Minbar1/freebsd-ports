@@ -11,11 +11,10 @@ COMMENT=	Define blocks for your i3bar status line
 LICENSE=	GPLv3
 
 CFLAGS +=	-I${LOCALBASE}/include
-USES=		gmake tar:bzip2
+USES=          gmake localbase tar:bzip2
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	Minbar1
-GH_PROJECT=	i3blocks
 GH_TAGNAME=	fcee4e0
 
 PLIST_FILES=	bin/i3blocks
