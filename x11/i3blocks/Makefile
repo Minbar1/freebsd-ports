@@ -16,7 +16,7 @@ USES=		gmake tar:bzip2
 USE_GITHUB=	yes
 GH_ACCOUNT=	Minbar1
 GH_PROJECT=	i3blocks
-GH_TAGNAME=	3ad5d00
+GH_TAGNAME=	fcee4e0
 
 PLIST_FILES=	bin/i3blocks
 
