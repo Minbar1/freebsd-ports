@@ -1,0 +1,3 @@
+bin/i3blocks
+%%ETCDIR%%.conf.sample
+%%PORTDOCS%%%%DOCSDIR%%/i3blocks.1.md
