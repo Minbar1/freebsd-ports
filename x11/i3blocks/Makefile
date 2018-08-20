@@ -17,12 +17,13 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	Minbar1
 GH_TAGNAME=	fcee4e0
 
-PLIST_FILES=	bin/i3blocks
-
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/i3blocks ${STAGEDIR}${PREFIX}/bin/i3blocks
-	${INSTALL_MAN} ${WRKSRC}/i3blocks.1.md ${STAGEDIR}${MANPREFIX}/man/man1
 	${INSTALL_DATA} ${WRKSRC}/i3blocks.conf \
 			${STAGEDIR}${PREFIX}/etc/i3blocks.conf.sample
+
+post-install:
+	${MKDIR} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_MAN} ${WRKSRC}/i3blocks.1.md ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>
