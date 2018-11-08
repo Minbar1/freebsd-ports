@@ -10,7 +10,6 @@ COMMENT=	Define blocks for your i3bar status line
 
 LICENSE=	GPLv3
 
-CFLAGS +=	-I${LOCALBASE}/include
 USES=          gmake localbase tar:bzip2
 
 USE_GITHUB=	yes
